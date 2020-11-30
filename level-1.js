@@ -1,3 +1,5 @@
+let show = document.getElementById('show_id');
+
 //LEVEL 1
 // Question 1
 const frukt = 'banan';
@@ -18,14 +20,20 @@ let person = {
     }
 
   }
+
   console.log(person.key, person.firstname, person.lastname, person.age, person.hobbies);
   console.log(person.address);
   console.log(person.hobbies['2']);
   console.log(person.address.city);
+  show.innerHTML = 'Mitt navn er' ;
 
 
   //Question 3
   const outOfStock = 2;
   console.log(typeof outOfStock);
   console.log(Boolean(outOfStock));
+  console.log(show);
+  
+  
+  show.innerHTML = 'Mitt navn er <b>' + person.firstname + ' ' + person.lastname + '</b> fra <b>' + person.address.city + '</b><br>Tallet er ' + outOfStock + ' ' ;
 
