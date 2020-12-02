@@ -2,7 +2,7 @@ let show = document.getElementById('show_id');
 
 //LEVEL 1
 // Question 1
-const frukt = 'banan';
+const frukt = 'mango';
 console.log(frukt);
 
 //Question 2
@@ -25,15 +25,25 @@ let person = {
   console.log(person.address);
   console.log(person.hobbies['2']);
   console.log(person.address.city);
-  show.innerHTML = 'Mitt navn er' ;
 
 
   //Question 3
-  const outOfStock = 2;
+  const outOfStock = 12;
+  const outOfStockValue = Boolean(outOfStock);
+
+  if(Boolean(outOfStock) === true) {
+    console.log('In Stock');
+  } else {
+    console.log('Out of stock');
+  }
+
   console.log(typeof outOfStock);
   console.log(Boolean(outOfStock));
-  console.log(show);
+  console.log(outOfStockValue);
   
   
-  show.innerHTML = 'Mitt navn er <b>' + person.firstname + ' ' + person.lastname + '</b> fra <b>' + person.address.city + '</b><br>Tallet er ' + outOfStock + ' ' ;
+  show.innerHTML = 'My name is <b>' + person.firstname + ' ' + person.lastname + '</b>' 
+  + ' and Im from <b>' + person.address.city + '</b><br>StockValue is ' + outOfStock + ' '
+  + '<br> and value is <b>' + outOfStockValue + '</b> ' ;
+
 
