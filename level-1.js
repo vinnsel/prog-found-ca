@@ -37,13 +37,52 @@ let person = {
     console.log('Out of stock');
   }
 
-  console.log(typeof outOfStock);
-  console.log(Boolean(outOfStock));
-  console.log(outOfStockValue);
+//  console.log(typeof outOfStock);
+//  console.log(Boolean(outOfStock));
+//  console.log(outOfStockValue);
   
   
+//Question 4 - Array
+const customer = [
+  {
+    id: 1,
+    firstname: 'Peter',
+    lastname: 'Sagan',
+    phone: 74639473
+  },
+  {
+    id: 2,
+    firstname: 'Olav ',
+    lastname: 'King',
+    phone: 88743974
+  },
+  {
+    id: 3,
+    firstname: 'Trond',
+    lastname: 'Trondheim',
+    phone: 93847898
+  }
+];
+console.log(customer);
+
+//Question 5 - For loop
+for(let id = 15; id <= 25; id++) {
+  console.log(`For Loop Number: ${id}`);
+
+//Question 6 - If
+if(id === 20) {
+  console.log('Tallet over er 20');
+}
+} 
+
+//Question 7
+
+
+
+
+
   show.innerHTML = 'My name is <b>' + person.firstname + ' ' + person.lastname + '</b>' 
   + ' and Im from <b>' + person.address.city + '</b><br>StockValue is ' + outOfStock + ' '
-  + '<br> and value is <b>' + outOfStockValue + '</b> ' ;
+  + '<br> and value is <b>' + outOfStockValue + '</b> <br>';
 
 
