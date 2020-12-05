@@ -77,10 +77,12 @@ const customer = [
     lastname: 'Trondheim',
     phone: 93847898
   }
+
 ];
-//console.log(customer);
-//for(let id = 15; id <= 25; id++) {
-//  console.log(`For Loop Number: ${id}`);
+  console.log(customer);
+for(let costumerid = 1; costumerid <= 2; costumerid++) {
+  console.log(`firstname: ${costumerid}`);
+}
 
 
 
