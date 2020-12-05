@@ -43,27 +43,9 @@ let person = {
   
   
 //Question 4 - Array
-const customer = [
-  {
-    id: 1,
-    firstname: 'Peter',
-    lastname: 'Sagan',
-    phone: 74639473
-  },
-  {
-    id: 2,
-    firstname: 'Olav ',
-    lastname: 'King',
-    phone: 88743974
-  },
-  {
-    id: 3,
-    firstname: 'Trond',
-    lastname: 'Trondheim',
-    phone: 93847898
-  }
-];
-console.log(customer);
+const appointmets = ['meeting', 'training', 'work'];
+ 
+console.log(appointmets);
 
 //Question 5 - For loop
 for(let id = 15; id <= 25; id++) {
@@ -76,8 +58,29 @@ if(id === 20) {
 } 
 
 //Question 7
-
-
+const customer = [
+  {
+    costumerid: 1,
+    firstname: 'Peter',
+    lastname: 'Sagan',
+    phone: 74639473
+  },
+  {
+    costumerid: 2,
+    firstname: 'Olav ',
+    lastname: 'King',
+    phone: 88743974
+  },
+  {
+    costumerid: 3,
+    firstname: 'Trond',
+    lastname: 'Trondheim',
+    phone: 93847898
+  }
+];
+//console.log(customer);
+//for(let id = 15; id <= 25; id++) {
+//  console.log(`For Loop Number: ${id}`);
 
 
 
