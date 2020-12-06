@@ -15,10 +15,7 @@ let person = {
     address: {
       street: 'bahusveien',
       city: 'Spikkestad'
-
-
     }
-
   }
 
   console.log(person.key, person.firstname, person.lastname, person.age, person.hobbies);
@@ -91,12 +88,17 @@ for(let i = 0; i < costumer.length; i++) {
   }
   
   let badThings = 'war';
-  whatIDontLike("I don't like ", badThings);
+  whatIDontLike("I don't like", badThings);
   
-  //Question 9
+//Question 9
+let reminder = [];
+function reminderFunction(reminder) {
+  console.log(reminder);
+}
+reminderFunction(['car service', 'meeting', 'training']);
+
 
   show.innerHTML = 'My name is <b>' + person.firstname + ' ' + person.lastname + '</b>' 
-  + ' and live in <b>' + person.address.city + '</b><br>StockValue is ' + outOfStock + ' '
-  + '<br> and value is <b>' + outOfStockValue + '</b> <br>';
+  + '<br>The rest is console logged -->';
 
 
