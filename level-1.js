@@ -58,36 +58,45 @@ if(id === 20) {
 } 
 
 //Question 7
-const customer = [
+const costumer = [
   {
     costumerid: 1,
     firstname: 'Peter',
     lastname: 'Sagan',
-    phone: 74639473
+    phone: 74639473,
+    active: true
   },
   {
     costumerid: 2,
-    firstname: 'Olav ',
+    firstname: 'Olav',
     lastname: 'King',
-    phone: 88743974
+    phone: 88743974,
+    active: true
   },
   {
     costumerid: 3,
     firstname: 'Trond',
     lastname: 'Trondheim',
-    phone: 93847898
+    phone: 93847898,
+    active: false
   }
-
 ];
-  console.log(customer);
-for(let costumerid = 1; costumerid <= 2; costumerid++) {
-  console.log(`firstname: ${costumerid}`);
+  console.log(costumer.length);
+for(let i = 0; i < costumer.length; i++) {
+    console.log(costumer[i].phone, costumer[i].active);
 }
-
-
+//Question 8
+  function whatIDontLike(badThings, text) {
+    console.log(badThings + ' - ' + text);
+  }
+  
+  let badThings = 'war';
+  whatIDontLike("I don't like ", badThings);
+  
+  //Question 9
 
   show.innerHTML = 'My name is <b>' + person.firstname + ' ' + person.lastname + '</b>' 
-  + ' and Im from <b>' + person.address.city + '</b><br>StockValue is ' + outOfStock + ' '
+  + ' and live in <b>' + person.address.city + '</b><br>StockValue is ' + outOfStock + ' '
   + '<br> and value is <b>' + outOfStockValue + '</b> <br>';
 
 
