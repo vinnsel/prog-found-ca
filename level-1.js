@@ -29,9 +29,9 @@ let person = {
   const outOfStockValue = Boolean(outOfStock);
 
   if(Boolean(outOfStock) === true) {
-    console.log('In Stock');
+    console.log(true);
   } else {
-    console.log('Out of stock');
+    console.log(false);
   }
 
 //  console.log(typeof outOfStock);
@@ -40,10 +40,11 @@ let person = {
   
   
 //Question 4 - Array
-const appointmets = ['meeting', 'training', 'work'];
+const costumerid = [1,2,3,4,5];
  
-console.log(appointmets);
-
+for(let i = 0; i < costumerid.length; i++) {
+  console.log('Costumerid: ' + costumerid[i] + '');
+}
 //Question 5 - For loop
 for(let id = 15; id <= 25; id++) {
   console.log(`For Loop Number: ${id}`);
